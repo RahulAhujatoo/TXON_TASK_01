@@ -1,0 +1,239 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+section
+{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
+  align-items: center;
+ 
+
+}
+header .logo
+{
+  position: relative;
+  max-width: 80px;
+}
+header ul{
+  position: relative;
+  display: flex;
+}
+header ul li
+{
+  list-style: none;
+
+}
+header ul li a
+{
+  display: inline-block;
+  color: black;
+  font-weight: 400;
+  margin-left: 40px;
+  font-size:20px;
+  text-decoration: none;
+  
+}
+header ul li a:hover
+{
+color: #006241;
+}
+.content
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.content .textBox
+{
+  position: relative;
+  max-width: 600px;
+}
+.content .textBox h2{
+  color: #333;
+  font-size: 4em;
+  line-height: 1.4em;
+  font-weight: 400;
+}
+.content .textBox h2 span{
+  color: #006241;
+  font-weight: 600;
+
+}
+.content .textBox p{
+  color: #333;
+}
+.content .textBox a{
+  display:inline-block ;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: #006241;
+  color: #fff;
+  border-radius: 40px;
+  font-weight: 500 ;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.content .imgBox
+{
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px ;
+  padding-bottom: 50px;
+  margin-top: 50px;
+}
+.content .imgBox img
+{
+  /* max-width: 540px ;
+  max-height: 540px; */
+  float: left;
+    width:  540px;
+    height: 540px;
+    background-size: cover;
+    display: inline-block;
+}
+.thumb{
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%);
+  display: flex;
+}
+.thumb li{
+  /* padding-top: 5px; */
+  /* padding-bottom: 10px; */
+  list-style: none;
+  display: inline-block;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+.thumb li:hover
+{
+  transform: translateY(-15px) ;
+}
+
+.thumb li img
+{
+    float: left;
+    width:  80px;
+    height: 80px;
+    background-size: cover;
+
+}
+.sci
+{
+  position:absolute ;
+  top: 50%;
+  right: 3%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  flex-direction: column;
+}
+/* .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.4 ease-in-out;
+  background-color: black;
+  cursor: pointer;
+
+} */
+.sci li
+{
+  list-style-type:none;
+
+}
+.sci li a
+{
+  display: inline-block;
+  margin: 10px 0;
+  transform: scale(0.8);
+ 
+  
+} 
+/* .sci .box img 
+{
+  display: inline-block;
+  position: relative;
+  margin: 10px 0;
+  transform: scale(0.5);
+  
+} */
+/* i changed the sci list items to a container and box inside 
+container to apply hover on images */
+
+/* .sci .box:hover{
+  opacity: 0.5;
+  transform: scale(1.5);
+  z-index: 10; 
+} */
+
+.sci li a:hover{
+  opacity: 0.5;
+  transform: scale(1.1);
+  z-index: 10; 
+}
+
+/* .sci li :hover .overlay{
+  opacity: 0.8;
+} */
+
+.circlew
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  background:#7d7e7e ;
+  clip-path:circle(1090px at left 1000px) ;
+  opacity:0.1 ;
+
+}
+
+.circle
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:#1f3933;
+  clip-path:circle(600px at right 900px) ;
+ 
+
+
+}

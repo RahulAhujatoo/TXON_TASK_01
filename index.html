@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>StarBucks Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<style>
+  body{
+    font-family: 'Open Sans', sans-serif;
+  }
+</style>
+</head>
+<body>
+  
+  <section>
+    <div class="circle"></div>
+    <div class="circlew"></div>
+    <header>
+      <a href="#" ><img src="logo.png" class="logo" ></a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">What's New</a></li>
+        <li><a href="#">Contact</a></li>
+
+      </ul>
+    </header>
+    <div class="content">
+      <div class="textBox">
+        <h2>It's not just Coffee <br>It's <span>Starbucks</span> </h2>
+        <p>To inspire and nurture the human spirit— one person, one cup and one neighborhood at a time.
+          You are what you drink. So what do you want to be today?
+        </p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="imgBox">
+        <img src="t1.png" class="starbucks">
+      </div>
+    </div>
+    <ul class="thumb">
+      <li><img src="img1.png" onclick="imgSlider('img1.png');changeCircleCol('#865337')"></li>
+      <li><img src="t1.png" onclick="imgSlider('t1.png');changeCircleCol('#1f3933')" ></li>
+      <li><img src="png3.png" onclick="imgSlider('img3.png');changeCircleCol('#c07940')" ></li>
+
+    </ul>
+  <!-- <div class="sci"> -->
+    <!-- <div class="box">
+      <a href="https://www.facebook.com/Starbucks/"><img src="facebook.png"></a>
+    </div>
+    <div class="box">
+      <a href="https://twitter.com/StarbucksIndia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="twitter.png"></a>
+    </div>
+    <div class="box">
+      <a href="https://www.instagram.com/starbucksindia/?hl=en"><img src="instagram.png"></a></li>
+    </div> -->
+    <ul class="sci">
+      <li><a href="https://www.facebook.com/Starbucks/"><img src="facebook.png"></a></li>
+      <li><a href="https://twitter.com/StarbucksIndia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="twitter.png"></a></li>
+      <li><a href="https://www.instagram.com/starbucksindia/?hl=en"><img src="instagram.png"></a></li>
+
+    </ul>
+  <!-- </div> -->
+  </section>
+
+  <script type="text/javascript">
+    function imgSlider(anything){
+      document.querySelector('.starbucks').src = anything;
+    }
+
+    function changeCircleCol(color){
+      const circle = document.querySelector('.circle');
+      circle.style.background=color;
+    }
+
+  </script>
+  
+</body>
+</html>
